@@ -1,0 +1,169 @@
+[{
+        "product": {
+            "imageUrl": "../images/aguacate.jpg",
+            "name": "Aguacate",
+            "pric,e": 5
+        },
+        "quant},ity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/ajo.jpg",
+            "name": "Ajo",
+            "pric,e": 1
+        },
+        "quant},ity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/almendras.jpg",
+            "name": "Almendras",
+            "pric,e": 1.5
+        },
+        "quant},ity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/arandanos.jpg",
+            "name": "Arandanos",
+            "price": 2
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/brocoli.jpg",
+            "name": "Brocoli",
+            "price": 2
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/calabaza.jpg",
+            "name": "Calabaza",
+            "price": 5
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/canela.jpg",
+            "name": "Canela",
+            "price": 1
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/cebolla.jpg",
+            "name": "Cebolla",
+            "price": 1
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/fresa.jpg",
+            "name": "Fresa",
+            "price": 3
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/kiwi.jpg",
+            "name": "Kiwi",
+            "price": 3
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/limon.jpg",
+            "name": "Limon",
+            "price": 1
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/lychee.jpg",
+            "name": "Lychee",
+            "price": 1
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/maiz.jpg",
+            "name": "Maiz",
+            "price": 2
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/manzana.jpg",
+            "name": "Manzana",
+            "price": 2
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/naranja.jpg",
+            "name": "Naranja",
+            "price": 1
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/papa.jpg",
+            "name": "Papa",
+            "price": 1
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/pasta.jpg",
+            "name": "Pasta",
+            "price": 2
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/pimienta.jpg",
+            "name": "Pimienta",
+            "price": 1
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/repollo.jpg",
+            "name": "Repollo",
+            "price": 2
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/tomate.jpg",
+            "name": "Tomate",
+            "price": 1
+        },
+        "quantity": 50
+    },
+    {
+        "product": {
+            "imageUrl": "../images/zanahoria.jpg",
+            "name": "Zanahoria",
+            "price": 1
+        },
+        "quantity": 50
+    }
+]

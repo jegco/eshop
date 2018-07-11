@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IStack } from '../model/Stack';
+import { Route, Router } from '@angular/router';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-shop',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopComponent implements OnInit {
 
-  constructor() { }
+  stacks: IStack[];
+
+  constructor(private router: Router,
+  private productService: ProductService) {}
 
   ngOnInit() {
+    this.productService.getData().subscribe(stacks => {
+      this.stacks = stacks.json();
+    });
   }
 
 }

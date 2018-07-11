@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Http, HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,11 +12,13 @@ import { ShopComponent } from './shop/shop.component';
 import { ProductService } from './product.service';
 import { UserService } from './user.service';
 import { RouterModule, Routes } from '@angular/router';
+import { CarComponent } from './car/car.component';
 
 const routes = [
-  {path: '', component: LoginComponent},
-{path: '/home', component: ShopComponent},
-{path: '/detalis/'}];
+{path: 'home', component: ShopComponent},
+{path: 'details/:id', component: DetailsComponent},
+{ path: 'paycar', component: CarComponent},
+{ path: '**', component: LoginComponent }];
 
 @NgModule({
   declarations: [
@@ -24,12 +27,14 @@ const routes = [
     NavigationComponent,
     SummaryComponent,
     DetailsComponent,
-    ShopComponent
+    ShopComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   exports: [RouterModule],
   providers: [ProductService, UserService],

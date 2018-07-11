@@ -1,30 +1,30 @@
 [{
         "product": {
-            "imageUrl": "../images/aguacate.jpg",
+            "imageUrl": "assets/images/aguacate.jpg",
             "name": "Aguacate",
-            "pric,e": 5
+            "price": 5
         },
-        "quant},ity": 50
+        "quantity": 50
     },
     {
         "product": {
-            "imageUrl": "../images/ajo.jpg",
+            "imageUrl": "assets/images/ajo.jpg",
             "name": "Ajo",
-            "pric,e": 1
+            "price": 1
         },
-        "quant},ity": 50
+        "quantity": 50
     },
     {
         "product": {
-            "imageUrl": "../images/almendras.jpg",
+            "imageUrl": "assets/images/almendras.jpg",
             "name": "Almendras",
-            "pric,e": 1.5
+            "price": 1.5
         },
-        "quant},ity": 50
+        "quantity": 50
     },
     {
         "product": {
-            "imageUrl": "../images/arandanos.jpg",
+            "imageUrl": "assets/images/arandanos.jpg",
             "name": "Arandanos",
             "price": 2
         },
@@ -32,7 +32,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/brocoli.jpg",
+            "imageUrl": "assets/images/brocoli.png",
             "name": "Brocoli",
             "price": 2
         },
@@ -40,7 +40,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/calabaza.jpg",
+            "imageUrl": "assets/images/calabaza.jpg",
             "name": "Calabaza",
             "price": 5
         },
@@ -48,7 +48,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/canela.jpg",
+            "imageUrl": "assets/images/canela.jpg",
             "name": "Canela",
             "price": 1
         },
@@ -56,7 +56,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/cebolla.jpg",
+            "imageUrl": "assets/images/cebolla.jpg",
             "name": "Cebolla",
             "price": 1
         },
@@ -64,7 +64,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/fresa.jpg",
+            "imageUrl": "assets/images/fresa.jpg",
             "name": "Fresa",
             "price": 3
         },
@@ -72,7 +72,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/kiwi.jpg",
+            "imageUrl": "assets/images/kiwi.jpg",
             "name": "Kiwi",
             "price": 3
         },
@@ -80,7 +80,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/limon.jpg",
+            "imageUrl": "assets/images/limon.jpg",
             "name": "Limon",
             "price": 1
         },
@@ -88,7 +88,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/lychee.jpg",
+            "imageUrl": "assets/images/lychee.jpg",
             "name": "Lychee",
             "price": 1
         },
@@ -96,7 +96,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/maiz.jpg",
+            "imageUrl": "assets/images/maiz.jpg",
             "name": "Maiz",
             "price": 2
         },
@@ -104,7 +104,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/manzana.jpg",
+            "imageUrl": "assets/images/manzana.jpg",
             "name": "Manzana",
             "price": 2
         },
@@ -112,7 +112,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/naranja.jpg",
+            "imageUrl": "assets/images/naranja.jpg",
             "name": "Naranja",
             "price": 1
         },
@@ -120,7 +120,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/papa.jpg",
+            "imageUrl": "assets/images/papa.jpg",
             "name": "Papa",
             "price": 1
         },
@@ -128,7 +128,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/pasta.jpg",
+            "imageUrl": "assets/images/pasta.jpg",
             "name": "Pasta",
             "price": 2
         },
@@ -136,7 +136,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/pimienta.jpg",
+            "imageUrl": "assets/images/pimienta.jpg",
             "name": "Pimienta",
             "price": 1
         },
@@ -144,7 +144,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/repollo.jpg",
+            "imageUrl": "assets/images/repollo.jpg",
             "name": "Repollo",
             "price": 2
         },
@@ -152,7 +152,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/tomate.jpg",
+            "imageUrl": "assets/images/tomate.jpg",
             "name": "Tomate",
             "price": 1
         },
@@ -160,7 +160,7 @@
     },
     {
         "product": {
-            "imageUrl": "../images/zanahoria.jpg",
+            "imageUrl": "assets/images/zanahoria.jpg",
             "name": "Zanahoria",
             "price": 1
         },

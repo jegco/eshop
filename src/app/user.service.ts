@@ -9,7 +9,7 @@ export class UserService {
   constructor(private http: Http) {}
 
   getData() {
-    return this.http.get('../assets/data/users-api.json').map(response => response.json());
+    return this.http.get('https://eshop-752ae.firebaseio.com/users.json').map(response => response.json());
   }
 
 }

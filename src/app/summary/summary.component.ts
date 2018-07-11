@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { IStack, Stack } from '../model/Stack';
+import { Router } from '../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-summary',
   templateUrl: './summary.component.html',
   styleUrls: ['./summary.component.css']
 })
-export class SummaryComponent implements OnInit {
+export class SummaryComponent {
 
-  constructor() { }
+  @Input()
+  stack: IStack;
 
-  ngOnInit() {
+
+  constructor(private router: Router) {}
+
+  details(id: String) {
+    this.router.navigateByUrl('/details/' + id);
   }
-
 }

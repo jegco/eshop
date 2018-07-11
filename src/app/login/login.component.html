@@ -7,14 +7,14 @@
                         <div class="col-md-12">
                             <div id="login-form">
                                 <div class="form-group">
-                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required>
+                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" [(ngModel)]="user.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" required>
+                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" [(ngModel)]="user.password" required pattern=".{6,}">
                                 </div>
                                 <div class="form-group">
                                     <div class="row">
-                                        <div class="col-sm-6 col-sm-offset-3">
+                                        <div>
                                             <input type="submit" name="login-submit" (click)="login()" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
                                         </div>
                                     </div>

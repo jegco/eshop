@@ -9,8 +9,20 @@
     justify-content: space-around;
     display: flex;
 }
+
 .btn-login {
     background-color: green;
     text-decoration-color: white;
     color: white;
+}
+
+.form-control {
+    color: white;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
 }

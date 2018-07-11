@@ -21,7 +21,7 @@ export class ProductService {
       this.http.put('https://eshop-752ae.firebaseio.com/stock.json', stack);
     }
 
-    getProduct(id: number) {
+    getProduct(id: number): Observable<any> {
       return this.http
         .get('https://eshop-752ae.firebaseio.com/stock/' + id + '.json');
     }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IStack } from '../model/Stack';
+import { ProductService } from '../product.service';
+import { Router, ActivatedRoute } from '../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -9,10 +11,17 @@ import { IStack } from '../model/Stack';
 export class DetailsComponent implements OnInit {
 
   stack: IStack;
+  id: number;
 
-  constructor() { }
+  constructor(private productService: ProductService,
+  private router: Router,
+private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.id = this.route.snapshot.params['id'];
+    this.productService.getProduct(this.id).subscribe(stack => {
+      this.stack = stack.json();
+    });
   }
 
 }

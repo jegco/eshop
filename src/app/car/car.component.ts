@@ -12,11 +12,13 @@ export class CarComponent {
 
   paycard: IStack[];
   subtotal = 0;
+  productsLoaded = false;
 
   constructor(private productService: ProductService,
   private router: Router) {
     this.productService.getPaycar().subscribe(paycard => {
       this.paycard = paycard.json();
+      this.productsLoaded = true;
       this.paycard = this.paycard.filter(stock => stock != null);
       this.paycard.forEach(stock => {
         this.subtotal += stock.quantity * stock.product.price;

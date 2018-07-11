@@ -13,6 +13,7 @@ import { ProductService } from './product.service';
 import { UserService } from './user.service';
 import { RouterModule, Routes } from '@angular/router';
 import { CarComponent } from './car/car.component';
+import { SearchComponent } from './search/search.component';
 
 const routes = [
 {path: 'home', component: ShopComponent},
@@ -28,7 +29,8 @@ const routes = [
     SummaryComponent,
     DetailsComponent,
     ShopComponent,
-    CarComponent
+    CarComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

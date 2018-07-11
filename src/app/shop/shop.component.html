@@ -1,8 +1,15 @@
 <app-navigation></app-navigation>
+
 <div class="s12 shop">
     <div class="row">
-        <div *ngFor="let stack of stacks">
-            <app-summary [stack]="stack"></app-summary>
+        <div class="progress" *ngIf="!productsLoaded">
+            <div class="indeterminate"></div>
+        </div>
+        <div id="container" *ngIf="productsLoaded">
+            <app-search></app-search>
+            <div *ngFor="let stack of stacks">
+                <app-summary [stack]="stack"></app-summary>
+            </div>
         </div>
     </div>
 </div>

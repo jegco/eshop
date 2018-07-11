@@ -12,6 +12,7 @@ export class DetailsComponent implements OnInit {
 
   stack: IStack;
   id: number;
+  productsLoaded = false;
 
   constructor(private productService: ProductService,
     private route: ActivatedRoute) { }
@@ -20,6 +21,7 @@ export class DetailsComponent implements OnInit {
     this.id = this.route.snapshot.params['id'];
     this.productService.getProduct(this.id).subscribe(stack => {
       this.stack = stack.json();
+      this.productsLoaded = true;
     });
   }
 

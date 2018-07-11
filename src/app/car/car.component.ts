@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { IStack } from '../model/Stack';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-car',
@@ -12,7 +13,8 @@ export class CarComponent {
   paycard: IStack[];
   subtotal = 0;
 
-  constructor(private productService: ProductService) {
+  constructor(private productService: ProductService,
+  private router: Router) {
     this.productService.getPaycar().subscribe(paycard => {
       this.paycard = paycard.json();
       this.paycard = this.paycard.filter(stock => stock != null);
@@ -22,4 +24,11 @@ export class CarComponent {
     });
   }
 
+  pay() {
+    this.productService.pay().subscribe(() => this.goBack());
+  }
+
+  goBack() {
+    this.router.navigateByUrl('/home');
+  }
 }

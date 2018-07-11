@@ -37,4 +37,10 @@ export class ProductService {
     return this.http
       .get('https://eshop-752ae.firebaseio.com/paycar/.json');
   }
+
+  pay() {
+    return this.http.delete('https://eshop-752ae.firebaseio.com/paycar/.json').map(
+      (response) => response.json()
+    );
+  }
 }

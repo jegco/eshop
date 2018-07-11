@@ -11,6 +11,7 @@ import { ProductService } from '../product.service';
 export class ShopComponent implements OnInit {
 
   stacks: IStack[];
+  productsLoaded = false;
 
   constructor(private router: Router,
   private productService: ProductService) {}
@@ -18,6 +19,7 @@ export class ShopComponent implements OnInit {
   ngOnInit() {
     this.productService.getData().subscribe(stacks => {
       this.stacks = stacks.json();
+      this.productsLoaded = true;
     });
   }
 

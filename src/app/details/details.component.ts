@@ -14,8 +14,7 @@ export class DetailsComponent implements OnInit {
   id: number;
 
   constructor(private productService: ProductService,
-  private router: Router,
-private route: ActivatedRoute) { }
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.id = this.route.snapshot.params['id'];

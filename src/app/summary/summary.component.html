@@ -10,8 +10,8 @@
         </div>
         <div class="card-action">
             <a (click)="details(stack.id)">ver mas</a>
-            <a href="#">añadir</a>
-            <input type="number" min="1" value="1" max="{{ stack.quantity }}">
+            <a (click)="addToPayCar()">añadir</a>
+            <input type="number" min="1" [(ngModel)]="quantity" max="{{ stack.quantity }}">
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IStack, Stack } from '../model/Stack';
 import { Router } from '../../../node_modules/@angular/router';
 import { ProductService } from '../product.service';
@@ -10,11 +10,11 @@ import { ProductService } from '../product.service';
 })
 export class SummaryComponent {
 
-  @Input()
-  stack: IStack;
   quantity: number;
   paycardStack: IStack;
 
+  @Input()
+  stack: IStack;
 
   constructor(private router: Router,
   private productService: ProductService) {}

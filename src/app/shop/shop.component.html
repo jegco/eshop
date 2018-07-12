@@ -8,7 +8,7 @@
         <div id="container" *ngIf="productsLoaded">
             <app-search></app-search>
             <div *ngFor="let stack of stacks">
-                <app-summary [stack]="stack"></app-summary>
+                <app-summary [stack]="stack" (searchEmitter)="search($event)"></app-summary>
             </div>
         </div>
     </div>

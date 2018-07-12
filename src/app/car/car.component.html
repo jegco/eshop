@@ -1,10 +1,13 @@
 <app-navigation></app-navigation>
 <div class="col s12 m6 l3">
+        <div class="progress" *ngIf="!productsLoaded">
+                <div class="indeterminate"></div>
+            </div>
     <div class="card">
         <div class="card-content">
-            <ul class="collection col s12 m6 l3" *ngFor="let stack of paycard">
-                <li class="collection-item">
-                    <img src="{{ stack.product.imageUrl }}">
+            <ul class="collection" *ngFor="let stack of paycard">
+                <li class="collection-item col s12 m6 l3">
+                    <img src="{{ stack.product.imageUrl }}" class="col s12 m6 l3">
                     <p class="card-text">precio: {{ stack.product.price }}</p>
                     <p class="card-text">cantidad: {{ stack.quantity }}</p>
                 </li>

@@ -1,4 +1,9 @@
 .collection {
-    width: 40%;
+    width: 30%;
     height: 40vh;
+}
+
+img {
+    height: 33vh;
+    width: 100%;
 }

@@ -23,4 +23,8 @@ export class ShopComponent implements OnInit {
     });
   }
 
+  search(name: string) {
+    console.lop('llego');
+    this.stacks = this.stacks.filter(stack => stack.product.name.indexOf(name) >= 0);
+  }
 }

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { IStack } from '../model/Stack';
+import { Component } from '@angular/core';
 import { IUser, User } from '../model/User';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';

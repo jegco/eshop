@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-search',
@@ -7,13 +8,14 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class SearchComponent {
 
+  productName: String = '';
+
   @Output()
   searchEmiter: EventEmitter<String> = new EventEmitter();
 
   constructor() { }
 
-  search(productName: string) {
-    console.log('llego');
-    this.searchEmiter.emit(productName);
+  search(productName: Event) {
+    this.searchEmiter.emit(this.productName);
   }
 }

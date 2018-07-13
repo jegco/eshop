@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IStack } from '../model/Stack';
 import { Route, Router } from '@angular/router';
 import { ProductService } from '../product.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-shop',
@@ -14,7 +15,7 @@ export class ShopComponent implements OnInit {
   productsLoaded = false;
 
   constructor(private router: Router,
-  private productService: ProductService) {}
+    private productService: ProductService) { }
 
   ngOnInit() {
     this.productService.getData().subscribe(stacks => {
@@ -24,7 +25,7 @@ export class ShopComponent implements OnInit {
   }
 
   search(name: string) {
-    console.lop('llego');
+    console.log(name);
     this.stacks = this.stacks.filter(stack => stack.product.name.indexOf(name) >= 0);
   }
 }

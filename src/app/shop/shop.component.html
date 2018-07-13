@@ -6,9 +6,9 @@
             <div class="indeterminate"></div>
         </div>
         <div id="container" *ngIf="productsLoaded">
-            <app-search></app-search>
+            <app-search (searchEmiter)="search($event)"></app-search>
             <div *ngFor="let stack of stacks">
-                <app-summary [stack]="stack" (searchEmitter)="search($event)"></app-summary>
+                <app-summary [stack]="stack"></app-summary>
             </div>
         </div>
     </div>

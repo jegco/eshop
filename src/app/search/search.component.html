@@ -1,11 +1,11 @@
 <div class="row">
     <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">search</i>
-          <input id="icon_prefix" class="fomr-control" type="text" class="validate" [(value)]="productName" (input)="search()">
-          <label for="icon_prefix" class="placeholder">Escribe el nombre de los productos a buscar</label>
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">search</i>
+                <input id="icon_prefix" class="fomr-control" type="text" class="validate" [(ngModel)]="productName" name="productName" (change)="search()">
+                <label for="icon_prefix" class="placeholder">Escribe el nombre de los productos a buscar</label>
+            </div>
         </div>
-      </div>
     </form>
-  </div>
+</div>

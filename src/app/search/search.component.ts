@@ -15,7 +15,7 @@ export class SearchComponent {
 
   constructor() { }
 
-  search(productName: Event) {
+  search() {
     this.searchEmiter.emit(this.productName);
   }
 }

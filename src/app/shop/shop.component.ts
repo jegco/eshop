@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { IStack } from '../model/Stack';
+import { IStack, Stack } from '../model/Stack';
 import { Route, Router } from '@angular/router';
 import { ProductService } from '../product.service';
 import { Observable } from 'rxjs/Observable';
+import { STATUS_CODES } from 'http';
 
 @Component({
   selector: 'app-shop',
@@ -25,7 +26,10 @@ export class ShopComponent implements OnInit {
   }
 
   search(name: string) {
-    console.log(name);
-    this.stacks = this.stacks.filter(stack => stack.product.name.indexOf(name) >= 0);
+    const indexes: number[] = [];
+    this.productService.getData().subscribe(stacks => {
+      this.stacks = stacks.json();
+      this.stacks = this.stacks.filter(stack => stack.product.name.search(name) !== -1);
+    });
   }
 }

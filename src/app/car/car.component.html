@@ -1,22 +1,24 @@
 <app-navigation></app-navigation>
-<div class="col s12 m6 l3">
-        <div class="progress" *ngIf="!productsLoaded">
-                <div class="indeterminate"></div>
-            </div>
+<div class="col s12 container-fluid car-container">
+    <div class="progress" *ngIf="!productsLoaded">
+        <div class="indeterminate"></div>
+    </div>
     <div class="card">
         <div class="card-content">
             <ul class="collection" *ngFor="let stack of paycard">
-                <li class="collection-item col s12 m6 l3">
-                    <img src="{{ stack.product.imageUrl }}" class="col s12 m6 l3">
-                    <p class="card-text">precio: {{ stack.product.price }}</p>
-                    <p class="card-text">cantidad: {{ stack.quantity }}</p>
-                </li>
+                <div className="row collection-item">
+                    <li class="col s12 m12 l12">
+                        <img src="{{ stack.product.imageUrl }}" class="col s12 m9 l6 paycar-image">
+                        <p class="card-text">precio: {{ stack.product.price }}</p>
+                        <p class="card-text">cantidad: {{ stack.quantity }}</p>
+                    </li>
+                </div>
             </ul>
         </div>
         <div class="card-action">
             <p class="card-text">Subtotal: {{ subtotal }}</p>
-            <a class="waves-effect waves-light btn" (click)="pay()">Pagar</a>
-            <a class="waves-effect waves-light btn" (click)="goBack()">Cancelar</a>
+            <a class="waves-effect waves-light btn pagar" (click)="pay()">Pagar</a>
+            <a class="waves-effect waves-light btn cancelar" (click)="goBack()">Cancelar</a>
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  @Input()
+  contador: Number;
+
+  carNotEmpty = false;
+
   constructor() { }
 
   ngOnInit() {
+    if (this.contador !== 0) {
+      this.carNotEmpty = true;
+    } else {
+      this.carNotEmpty = false;
+    }
   }
 
 }

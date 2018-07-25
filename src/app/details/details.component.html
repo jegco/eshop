@@ -1,8 +1,8 @@
 <app-navigation></app-navigation>
-<div class="col s12 m6 l3">
-        <div class="progress" *ngIf="!productsLoaded">
-                <div class="indeterminate"></div>
-            </div>
+<div class="col s12 m12 l12 details-content container-fluid">
+    <div class="progress" *ngIf="!productsLoaded">
+        <div class="indeterminate"></div>
+    </div>
     <div class="card">
         <div class="card-image">
             <img src="{{ stack.product.imageUrl }}">

@@ -1,4 +1,4 @@
-<app-navigation [contador]="contador"></app-navigation>
+<app-navigation [contador]="counter"></app-navigation>
 
 <div class="s12 shop container-fluid">
     <div class="row">
@@ -8,7 +8,7 @@
         <div id="container" *ngIf="productsLoaded">
             <app-search (searchEmiter)="search($event)"></app-search>
             <div *ngFor="let stack of stacks">
-                <app-summary [stack]="stack"></app-summary>
+                <app-summary (counterEntry)="incrementCar($event)" [stack]="stack"></app-summary>
             </div>
         </div>
     </div>

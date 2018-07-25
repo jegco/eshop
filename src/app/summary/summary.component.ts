@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { IStack, Stack } from '../model/Stack';
 import { Router } from '../../../node_modules/@angular/router';
 import { ProductService } from '../product.service';
@@ -16,6 +16,9 @@ export class SummaryComponent {
   @Input()
   stack: IStack;
 
+  @Output()
+  counterEntry: EventEmitter<number> = new EventEmitter();
+
   constructor(private router: Router,
   private productService: ProductService) {}
 
@@ -30,8 +33,9 @@ export class SummaryComponent {
       this.paycardStack.quantity = this.quantity;
       this.paycardStack.id = this.stack.id;
       this.paycardStack.product = this.stack.product;
-      console.log(this.paycardStack);
-      this.productService.addToCar(this.paycardStack).subscribe((response: Response) => console.log(response.json()));
+      this.productService.addToCar(this.paycardStack).subscribe(() =>
+        this.counterEntry.emit(1)
+      );
     });
   }
 }

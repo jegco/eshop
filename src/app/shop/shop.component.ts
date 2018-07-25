@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IStack } from '../model/Stack';
-import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -12,7 +11,7 @@ export class ShopComponent implements OnInit {
 
   stacks: IStack[];
   productsLoaded = false;
-  contador = 2;
+  counter = 0;
 
   constructor(private productService: ProductService) { }
 
@@ -28,5 +27,10 @@ export class ShopComponent implements OnInit {
       this.stacks = stacks.json();
       this.stacks = this.stacks.filter(stack => stack.product.name.search(name) !== -1);
     });
+  }
+
+  incrementCar(counterEntry: number) {
+    this.counter += counterEntry;
+    console.log(this.counter);
   }
 }
